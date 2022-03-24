@@ -116,7 +116,7 @@
     </xpath>
     <xpath expr="//t[@t-set='head_website']" position="replace">
         <t t-set="head_website">
-            <meta name="generator" content="Odoo"/>
+            <meta name="generator" content="Webstika"/>
 
             <meta t-if="main_object and 'website_indexed' in main_object
                 and not main_object.website_indexed" name="robots" content="noindex"/>
@@ -203,8 +203,8 @@
     <xpath expr="//footer" position="inside">
         <div class="container mt16 mb8">
             <div class="pull-right" t-ignore="true" t-if="not editable">
-                Create a <a target="_blank" href="http://www.odoo.com/page/website-builder">free website</a> with
-                <a target="_blank" class="label label-danger" href="http://www.odoo.com/page/website-builder">Odoo</a>
+                Create a <a target="_blank" href="http://www.webstika.com/page/website-builder">free website</a> with
+                <a target="_blank" class="label label-danger" href="http://www.webstika.com/page/website-builder">Webstika</a>
             </div>
             <div class="pull-left text-muted" itemscope="itemscope" itemtype="http://schema.org/Organization">
                 Copyright &amp;copy; <span t-field="res_company.name" itemprop="name">Company name</span>
@@ -475,10 +475,10 @@
               </t>
               <t t-if="version">
                 <h1><t t-esc="res_company.name"/>
-                    <small>Odoo Version <t t-raw="version.get('server_version')"/></small>
+                    <small>Webstika Version <t t-raw="version.get('server_version')"/></small>
                 </h1>
                 <p>
-                    Information about the <t t-esc="res_company.name"/> instance of Odoo, the <a target="_blank" href="https://www.odoo.com">Open Source ERP</a>.
+                    Information about the <t t-esc="res_company.name"/> instance of Webstika, the <a target="_blank" href="https://www.webstika.com">Webstika</a>.
                 </p>
 
                 <div class="alert alert-warning alert-dismissable mt16" groups="website.group_website_publisher">
